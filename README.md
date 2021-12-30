@@ -1,27 +1,21 @@
-# AngularExercise
+# Ejercicio Angular v13
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Descripción:
+- Generar un nuevo proyecto de Angular
+  - Comando ng new <project_name>
+  - Recuerde que debe tener previamente instalado node y angular CLI
+- Genere, adicionamentel al app component, dos componentes de nombre componente1 y
+componente2
+  - ng generate component <component_name>
+  - Recuerde esta ubicado en el folder del proyecto cuando corra estos comandos
+- Indique una propiedad numérica en cada componente nuevo, y decorela con @Input() de
+manera que sea posible ser sobreescrita desde un componente padre
+- En el componente padre declare una propiedad tambien numérica que será la que
+sobreescribirá la propiedad de los dos componentes anteriores ( hijos ).  En el componente padre, utilice un control <input> ( html ) para poder alterar el valor de esta
+propiedad. Utilice [(ngModel)] para poder alterar la propiedad directamente
+  - Recuerde realizar los imports respectivos al modulo para que esta directiva funcione
+  - Utilice de referencia el proyecto visto en clase. 
+- Utilizando la implementacion de OnChanges capture, en los componentes hijos, todos los cambios generados a esta variable desde el input del padre. 
+- Para uno de los componentes hijos, imprimir el valor de la variable numérica alterada solamente si ha cambiado a ser un numero multiplo de 5. 
+- Para uno de los componentes hijos, imprimir el valor de la variable numérica alterada solamente si ha cambiado a ser un numero multiplo de 9. 
+- Utilice, a manera de ejemplo, el ejercicio hecho en clase.
